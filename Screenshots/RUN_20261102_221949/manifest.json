@@ -1,0 +1,218 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "50BE27B8-3E22-4ECE-96EC-DB240A26A751.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_E41C126E-69A5-495F-964D-EFA4573B508E.png",
+        "timestamp" : 1793638250.414
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_001_opensFromHome()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_001_opensFromHome"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "4576EAC7-F7A9-4CCC-8011-52854D2BFFB5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_BE56D8D7-5D4F-4FAF-B1AF-5BC6F7507DBE.png",
+        "timestamp" : 1793638265.495
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_002_showsAllOptions()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_002_showsAllOptions"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "6A2FD185-4A88-4881-9563-E0EA37E582CE.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_8FA6CDBC-B583-4054-87E1-0B0C8BCDFBBD.png",
+        "timestamp" : 1793638279.478
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_003_backReturnsHome()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_003_backReturnsHome"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "DCF8B568-50AF-4F29-88D0-14FBFFB269CD.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_D0BF4E2D-14B0-49FB-A85B-5365BE82C108.png",
+        "timestamp" : 1793638297.19
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "8E5523AB-A709-4779-A114-8BEB6026C4B5.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "observation_0_23023582-217A-4414-8098-AEC382C0D96C.txt",
+        "timestamp" : 1793638297.08
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_004_emptyEmailStays()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_004_emptyEmailStays"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "D5938DC2-E7DC-4790-9841-80F39A7ABC3C.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_28D9B0BF-9CA9-4479-AD8D-FE855C4A7CC5.png",
+        "timestamp" : 1793638319.267
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_005_invalidEmailShowsError()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_005_invalidEmailShowsError"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "88D63608-5F30-40BA-BCC1-42D461F66CAB.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_2F269381-7848-481C-8E44-1F015DCE3FA9.png",
+        "timestamp" : 1793638374.819
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_006_malformedEmailsRejected()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_006_malformedEmailsRejected"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "AFD620F3-5674-47AD-9E63-2E64319A8DC1.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_4242B81F-B90E-4B49-9919-B4F63230244C.png",
+        "timestamp" : 1793638400.116
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_008_validEmailNoError()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_008_validEmailNoError"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "F343A62D-FC58-4030-AA00-AFA45D2FBFE5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_56F4BD1E-92C0-4FD6-AF69-719DCD2384A8.png",
+        "timestamp" : 1793638415.183
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "AACA4894-CC73-4FBB-B5F5-00D980FC163E.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "observation_0_3B214E97-B8D2-46A3-BAFA-A5D94B0396B6.txt",
+        "timestamp" : 1793638415.05
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_009_emailMaxLength80()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_009_emailMaxLength80"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "6737D50C-D065-466D-AE93-76CA94382C58.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_FB489E2A-00AE-41C3-AE21-6980A7B966FF.png",
+        "timestamp" : 1793638435.267
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_010_specialCharsAccepted()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_010_specialCharsAccepted"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "C0B5F8C8-D240-4365-80C5-B9AEED1FD51A.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_9680F10B-8624-4531-A3FF-D8DF64A95A7A.png",
+        "timestamp" : 1793638450.837
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_LOGIN_012_accessibilityLabels()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_LOGIN_012_accessibilityLabels"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "9EB627B6-BBFE-431E-B96C-A9C31B84E24D.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_CC6B7E3D-F235-4FE1-AD65-B2C925AD3741.png",
+        "timestamp" : 1793638469.673
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "3333441C-4BBB-434A-B522-8EBD74D64B09.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "observation_0_7F15A288-1565-4210-876C-D2CB07FE2A9F.txt",
+        "timestamp" : 1793638469.551
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_OBS_LOGIN_007_longTLD()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_OBS_LOGIN_007_longTLD"
+  },
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "4600B413-2389-4602-B999-A911ACE1B1BA.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "final_state_0_7DE96CA7-7626-4E4A-8B38-85F190977149.png",
+        "timestamp" : 1793638491.033
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "4DEE264D-45F4-4752-8DD7-AD575EED6709.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "observation_0_98BB0EBC-F1FF-4F58-B229-A71240395477.txt",
+        "timestamp" : 1793638490.923
+      }
+    ],
+    "testIdentifier" : "LoginPilotUITests/test_OBS_LOGIN_011_surroundingSpaces()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginPilotUITests/test_OBS_LOGIN_011_surroundingSpaces"
+  }
+]

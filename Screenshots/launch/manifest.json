@@ -1,0 +1,17 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "4CAD9927-F1CF-48A3-AE54-6EC09AD014A5.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "LAUNCH_001_after_launch_0_1EDE1E28-427F-4641-ADF8-7779C22A1D6B.png",
+        "timestamp" : 1793637486.072
+      }
+    ],
+    "testIdentifier" : "LaunchSmokeUITests/testAppLaunches()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LaunchSmokeUITests/testAppLaunches"
+  }
+]

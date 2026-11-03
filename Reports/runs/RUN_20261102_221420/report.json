@@ -1,0 +1,1095 @@
+{
+  "run": {
+    "run_id": "RUN_20261102_221420",
+    "started_at": "2026-11-02T22:14:20",
+    "finished_at": "2026-11-02T22:18:56",
+    "kind": "pilot",
+    "git_branch": "salary_SRPtitle",
+    "commit_sha": "caf11655ef1d49a290929eb1b30f4e4bf564e4e3",
+    "app_build": "Debug (simulator)",
+    "device": "iPhone 16",
+    "environment": "production (www.ngma.mobi)",
+    "result_bundle": "/Users/mradul.atray/Desktop/MY Agents/qaAgent/Reports/runs/RUN_20261102_221420/result.xcresult",
+    "summary": "{\"PASSED\": 8, \"FAILED\": 2, \"NEEDS_REVIEW\": 2, \"NOT_EXECUTED\": 15}"
+  },
+  "summary": {
+    "PASSED": 8,
+    "FAILED": 2,
+    "NEEDS_REVIEW": 2,
+    "NOT_EXECUTED": 15
+  },
+  "changed_files_uncommitted": [
+    "SwiftRevamp/NaukriGulf/NaukriGulf.xcodeproj/project.pbxproj",
+    "SwiftRevamp/NaukriGulf/NaukriGulf.xcodeproj/xcuserdata/mradul.atray.xcuserdatad/xcschemes/xcschememanagement.plist",
+    "SwiftRevamp/NaukriGulf/Pods/Pods.xcodeproj/xcuserdata/mradul.atray.xcuserdatad/xcschemes/xcschememanagement.plist",
+    "SwiftRevamp/NaukriGulf/NaukriGulf.xcodeproj/xcshareddata/xcschemes/NaukriGulfUITests.xcscheme",
+    "SwiftRevamp/NaukriGulf/NaukriGulfUITests/"
+  ],
+  "affected_features": [
+    "Login"
+  ],
+  "jira_references": [],
+  "total_duration_s": 178.8,
+  "candidates_pending_approval": 27,
+  "needs_review": [
+    {
+      "test_id": "LOGIN_004",
+      "note": "Code passes isShowValdText=false for empty input, so 'Please specify your Email ID' may never be shown. Is a silent no-op the intended UX?",
+      "observed": "Empty-email message 'Please specify your Email ID' shown: false"
+    },
+    {
+      "test_id": "LOGIN_007",
+      "note": "Should valid long-TLD emails be accepted? Current regex rejects them.",
+      "observed": "'qa.test@example.museum' -> validation error shown: false"
+    },
+    {
+      "test_id": "LOGIN_011",
+      "note": "Requirement on trimming whitespace is not defined.",
+      "observed": "' qa.test@example.com ' -> field value 'qa.test@example.com ', validation error shown: false"
+    },
+    {
+      "test_id": "LOGIN_022",
+      "note": "No user feedback on server error/timeout in handleContinueBtnTap. Intended?",
+      "observed": "No user feedback on server error/timeout in handleContinueBtnTap. Intended?"
+    },
+    {
+      "test_id": "LOGIN_027",
+      "note": "checkforAnyValidationError clears password validation instead of checking it (NGLoginViewModel L348-350).",
+      "observed": "checkforAnyValidationError clears password validation instead of checking it (NGLoginViewModel L348-350)."
+    },
+    {
+      "test_id": "LOGIN_030",
+      "note": "Max 20 chars may block users with longer existing passwords — confirm.",
+      "observed": "Max 20 chars may block users with longer existing passwords — confirm."
+    },
+    {
+      "test_id": "LOGIN_031",
+      "note": "Expected offline UX not specified.",
+      "observed": "Expected offline UX not specified."
+    }
+  ],
+  "failures": [
+    {
+      "id": 3,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_003",
+      "status": "FAILED",
+      "duration_s": 0.0,
+      "actual": "Test crashed with signal term.",
+      "error": "Test crashed with signal term. [reclassified: simulator AccessibilityControlsExtension crash during launch]",
+      "failure_class": "ENVIRONMENT",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/B36E45B9-7674-4ED6-B1B4-C197F583054E"
+      ],
+      "feature": "Login",
+      "title": "Back arrow returns to Jobs home",
+      "expected": "Jobs home with 'Login' and 'Register' buttons is shown again",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC.handleCloseBtnTap",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Open Login screen",
+        "Tap back arrow"
+      ]
+    },
+    {
+      "id": 6,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_006",
+      "status": "FAILED",
+      "duration_s": 23.322636008262634,
+      "actual": "LoginPilotUITests.swift:111: XCTAssertTrue failed - 'Please enter a valid email ID' not shown for 'abc@'",
+      "error": "[INVALIDATED: automation endEditing helper did not dismiss keyboard; validation never triggered] LoginPilotUITests.swift:111: XCTAssertTrue failed - 'Please enter a valid email ID' not shown for 'abc@'",
+      "failure_class": "AUTOMATION",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/07066075-75F4-4AB0-8C16-4C4ADF125D02.png",
+        "Screenshots/RUN_20261102_221420/0A8F18C1-85C4-4A55-923F-128FDD64AFD4",
+        "Screenshots/RUN_20261102_221420/D0E74046-40AE-44C3-B4E1-B8E2586CD4E0",
+        "Screenshots/RUN_20261102_221420/3A01B70A-C7AB-4FCB-AC1F-F6120A8519B7",
+        "Screenshots/RUN_20261102_221420/EE6E0A27-BB98-4FC3-955C-6EBFEFE73EA4",
+        "Screenshots/RUN_20261102_221420/6828DC38-33CE-4ADB-9A27-440A054961E5",
+        "Screenshots/RUN_20261102_221420/2A895BA5-D1C6-41B6-A3E1-73D6B1B8E511.mp4"
+      ],
+      "feature": "Login",
+      "title": "Malformed email formats are rejected",
+      "expected": "'Please enter a valid email ID' is displayed for every value",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGValidationManager regexEmail [A-Z0-9a-z._+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "For each value: type it, tap 'Continue with email'"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "id": 1,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_001",
+      "status": "PASSED",
+      "duration_s": 15.335974931716919,
+      "actual": "As expected",
+      "error": "",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/D5E5955A-EEE6-4964-99A0-AF73549393F3.png"
+      ],
+      "feature": "Login",
+      "title": "Login screen opens from Jobs home Login button",
+      "expected": "Login screen with 'Welcome to Naukrigulf' and Email ID field is displayed",
+      "priority": "P1",
+      "severity": "Critical",
+      "jira_ref": "",
+      "requirement_ref": "Runtime exploration 2026-11-02 + NGSmartLoginRRVC.swift",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Launch app",
+        "Tap 'Login' on Jobs home"
+      ]
+    },
+    {
+      "id": 2,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_002",
+      "status": "PASSED",
+      "duration_s": 14.635952949523926,
+      "actual": "As expected",
+      "error": "",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/DEC2A491-D2AA-438C-B4AA-3E9AF6BCFCDF.png"
+      ],
+      "feature": "Login",
+      "title": "Login screen shows all entry options",
+      "expected": "Email ID field, 'Continue with email', 'Login with UAE PASS', 'Continue with Google', 'Continue with Apple', 'Continue with Facebook' are present",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC.buttonSetUp / runtime exploration",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Open Login screen",
+        "Inspect elements"
+      ]
+    },
+    {
+      "id": 3,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_003",
+      "status": "FAILED",
+      "duration_s": 0.0,
+      "actual": "Test crashed with signal term.",
+      "error": "Test crashed with signal term. [reclassified: simulator AccessibilityControlsExtension crash during launch]",
+      "failure_class": "ENVIRONMENT",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/B36E45B9-7674-4ED6-B1B4-C197F583054E"
+      ],
+      "feature": "Login",
+      "title": "Back arrow returns to Jobs home",
+      "expected": "Jobs home with 'Login' and 'Register' buttons is shown again",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC.handleCloseBtnTap",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Open Login screen",
+        "Tap back arrow"
+      ]
+    },
+    {
+      "id": 4,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_004",
+      "status": "PASSED",
+      "duration_s": 14.78923499584198,
+      "actual": "Empty-email message 'Please specify your Email ID' shown: false",
+      "error": "",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/A0AD09A9-A45B-41AD-930E-BFE8C3540ADF.png"
+      ],
+      "feature": "Login",
+      "title": "Continue with empty email does not proceed",
+      "expected": "User stays on Login screen; no API call is made",
+      "priority": "P1",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC.handleContinueBtnTap L214-221; NGSmartLoginRRVM L58-62",
+      "review_flag": "NEEDS_REVIEW",
+      "review_note": "Code passes isShowValdText=false for empty input, so 'Please specify your Email ID' may never be shown. Is a silent no-op the intended UX?",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Leave Email ID empty",
+        "Tap 'Continue with email'"
+      ]
+    },
+    {
+      "id": 5,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_005",
+      "status": "PASSED",
+      "duration_s": 18.285547018051147,
+      "actual": "As expected",
+      "error": "",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/78287A75-ADAC-4A93-A25A-121B51010030.png"
+      ],
+      "feature": "Login",
+      "title": "Invalid email shows validation message",
+      "expected": "'Please enter a valid email ID' is displayed and user stays on Login screen",
+      "priority": "P1",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGValidationManager.validateEmailAddress; en.lproj 'Please enter a valid email id'",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Type 'abc' in Email ID",
+        "Tap 'Continue with email'"
+      ]
+    },
+    {
+      "id": 6,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_006",
+      "status": "FAILED",
+      "duration_s": 23.322636008262634,
+      "actual": "LoginPilotUITests.swift:111: XCTAssertTrue failed - 'Please enter a valid email ID' not shown for 'abc@'",
+      "error": "[INVALIDATED: automation endEditing helper did not dismiss keyboard; validation never triggered] LoginPilotUITests.swift:111: XCTAssertTrue failed - 'Please enter a valid email ID' not shown for 'abc@'",
+      "failure_class": "AUTOMATION",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/07066075-75F4-4AB0-8C16-4C4ADF125D02.png",
+        "Screenshots/RUN_20261102_221420/0A8F18C1-85C4-4A55-923F-128FDD64AFD4",
+        "Screenshots/RUN_20261102_221420/D0E74046-40AE-44C3-B4E1-B8E2586CD4E0",
+        "Screenshots/RUN_20261102_221420/3A01B70A-C7AB-4FCB-AC1F-F6120A8519B7",
+        "Screenshots/RUN_20261102_221420/EE6E0A27-BB98-4FC3-955C-6EBFEFE73EA4",
+        "Screenshots/RUN_20261102_221420/6828DC38-33CE-4ADB-9A27-440A054961E5",
+        "Screenshots/RUN_20261102_221420/2A895BA5-D1C6-41B6-A3E1-73D6B1B8E511.mp4"
+      ],
+      "feature": "Login",
+      "title": "Malformed email formats are rejected",
+      "expected": "'Please enter a valid email ID' is displayed for every value",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGValidationManager regexEmail [A-Z0-9a-z._+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "For each value: type it, tap 'Continue with email'"
+      ]
+    },
+    {
+      "id": 7,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_007",
+      "status": "NEEDS_REVIEW",
+      "duration_s": 14.647905945777893,
+      "actual": "'qa.test@example.museum' -> validation error shown: false",
+      "error": "[INVALIDATED: automation endEditing helper did not dismiss keyboard; validation never triggered] ",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/1D7362C4-167A-4919-A2AA-3EE5F9B1D39E.png"
+      ],
+      "feature": "Login",
+      "title": "Email with TLD longer than 4 letters",
+      "expected": "NEEDS_REVIEW — code regex rejects TLDs > 4 letters (.museum, .technology) although they are valid addresses",
+      "priority": "P3",
+      "severity": "Minor",
+      "jira_ref": "",
+      "requirement_ref": "NGValidationManager regexEmail",
+      "review_flag": "NEEDS_REVIEW",
+      "review_note": "Should valid long-TLD emails be accepted? Current regex rejects them.",
+      "automation_status": "OBSERVATION",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Type 'qa.test@example.museum'",
+        "End editing"
+      ]
+    },
+    {
+      "id": 8,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_008",
+      "status": "PASSED",
+      "duration_s": 15.742125034332275,
+      "actual": "As expected",
+      "error": "[INVALIDATED: automation endEditing helper did not dismiss keyboard; validation never triggered] ",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/035592D1-3C02-4EA5-9DDF-F349047A6DF9.png"
+      ],
+      "feature": "Login",
+      "title": "Valid email format shows no validation error",
+      "expected": "No validation message is displayed",
+      "priority": "P1",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGValidationManager.validateEmailAddress",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Type 'qa.test@example.com'",
+        "End editing (no submit)"
+      ]
+    },
+    {
+      "id": 9,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_009",
+      "status": "PASSED",
+      "duration_s": 17.791446924209595,
+      "actual": "Typed 85 chars, field holds 80",
+      "error": "",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/7B769C87-C784-403C-819D-49637F072331.png"
+      ],
+      "feature": "Login",
+      "title": "Email field limited to 80 characters",
+      "expected": "Field holds at most 80 characters (maxCharacterAllowed = 80)",
+      "priority": "P3",
+      "severity": "Minor",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVM L35, L73-75; runtime RUN_20261102_221949: limit enforced (85 typed -> 80 kept)",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Type 85 characters into Email ID"
+      ]
+    },
+    {
+      "id": 10,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_010",
+      "status": "PASSED",
+      "duration_s": 15.238897919654846,
+      "actual": "As expected",
+      "error": "[INVALIDATED: automation endEditing helper did not dismiss keyboard; validation never triggered] ",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/92DFBDF2-C086-4ACF-B94B-1E6F7E02ABDA.png"
+      ],
+      "feature": "Login",
+      "title": "Plus-addressing and dots are accepted",
+      "expected": "No validation message is displayed",
+      "priority": "P3",
+      "severity": "Minor",
+      "jira_ref": "",
+      "requirement_ref": "NGValidationManager regexEmail",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Type 'qa.test+ng_01@example.co'",
+        "End editing"
+      ]
+    },
+    {
+      "id": 11,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_011",
+      "status": "NEEDS_REVIEW",
+      "duration_s": 15.224639058113098,
+      "actual": "' qa.test@example.com ' -> field value 'qa.test@example.com ', validation error shown: false",
+      "error": "[INVALIDATED: automation endEditing helper did not dismiss keyboard; validation never triggered] ",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/FF9BDAAD-70DE-4516-8B19-A97AFE7B8B1B.png"
+      ],
+      "feature": "Login",
+      "title": "Email with surrounding spaces",
+      "expected": "NEEDS_REVIEW — should input be trimmed or rejected?",
+      "priority": "P3",
+      "severity": "Minor",
+      "jira_ref": "",
+      "requirement_ref": "NGValidationManager regexEmail",
+      "review_flag": "NEEDS_REVIEW",
+      "review_note": "Requirement on trimming whitespace is not defined.",
+      "automation_status": "OBSERVATION",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Type ' qa.test@example.com '",
+        "End editing"
+      ]
+    },
+    {
+      "id": 12,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_012",
+      "status": "PASSED",
+      "duration_s": 13.745282053947449,
+      "actual": "As expected",
+      "error": "",
+      "failure_class": "",
+      "attachments": [
+        "Screenshots/RUN_20261102_221420/9314D912-3905-4669-A2EE-1FA34E5ACDE4.png"
+      ],
+      "feature": "Login",
+      "title": "Login screen controls have accessibility labels",
+      "expected": "Every button and text field exposes a non-empty accessibility label",
+      "priority": "P3",
+      "severity": "Minor",
+      "jira_ref": "",
+      "requirement_ref": "General accessibility",
+      "review_flag": "",
+      "review_note": "",
+      "automation_status": "AUTOMATED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Inspect all buttons and text fields"
+      ]
+    },
+    {
+      "id": 13,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_020",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging environment + test data",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "New email continues to Registration",
+      "expected": "GET /ngprofile/user/emailValidation returns 200 and Registration screen opens",
+      "priority": "P1",
+      "severity": "Critical",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC.handleContinueBtnTap L227-243",
+      "review_flag": "",
+      "review_note": "Needs staging environment + test data",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Enter unregistered email",
+        "Tap 'Continue with email'"
+      ]
+    },
+    {
+      "id": 14,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_021",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging test account",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Existing email continues to password screen with email prefilled",
+      "expected": "emailValidation returns 400 and password screen opens with email prefilled",
+      "priority": "P1",
+      "severity": "Critical",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC.handleContinueBtnTap L244-245",
+      "review_flag": "",
+      "review_note": "Needs staging test account",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Enter registered email",
+        "Tap 'Continue with email'"
+      ]
+    },
+    {
+      "id": 15,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_022",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "No user feedback on server error/timeout in handleContinueBtnTap. Intended?",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "emailValidation server error / timeout",
+      "expected": "NEEDS_REVIEW — code shows no message for non-200/400 responses; button is re-enabled",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC.handleContinueBtnTap",
+      "review_flag": "NEEDS_REVIEW",
+      "review_note": "No user feedback on server error/timeout in handleContinueBtnTap. Intended?",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Enter email",
+        "Tap 'Continue with email'"
+      ]
+    },
+    {
+      "id": 16,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_023",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging env + request inspection",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Rapid taps on Continue send one request",
+      "expected": "Only one emailValidation request is sent (preventMultipleTaps 30s)",
+      "priority": "P3",
+      "severity": "Minor",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC L222 preventMultipleTaps(for: 30)",
+      "review_flag": "",
+      "review_note": "Needs staging env + request inspection",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Enter email",
+        "Tap 'Continue with email' 5 times quickly"
+      ]
+    },
+    {
+      "id": 17,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_024",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging test account",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Correct password logs the user in",
+      "expected": "POST /nglogin/user/login succeeds; AT/RT saved; logged-in tabs shown",
+      "priority": "P1",
+      "severity": "Critical",
+      "jira_ref": "",
+      "requirement_ref": "NGLoginViewModel.updateToServer L59-96",
+      "review_flag": "",
+      "review_note": "Needs staging test account",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Reach password screen",
+        "Enter correct password",
+        "Tap Login"
+      ]
+    },
+    {
+      "id": 18,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_025",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging test account",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Wrong password shows invalid credentials banner",
+      "expected": "401 -> banner 'Invalid username or password'",
+      "priority": "P1",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGLoginViewModel L110-111",
+      "review_flag": "",
+      "review_note": "Needs staging test account",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Reach password screen",
+        "Enter wrong password",
+        "Tap Login"
+      ]
+    },
+    {
+      "id": 19,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_026",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging account safe to lock",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Too many attempts shows rate-limit banner",
+      "expected": "429 -> banner 'Too Many tries! Please try after some time!'",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGLoginViewModel L113-114",
+      "review_flag": "",
+      "review_note": "Needs staging account safe to lock",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Submit wrong password until 429"
+      ]
+    },
+    {
+      "id": 20,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_027",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "checkforAnyValidationError clears password validation instead of checking it (NGLoginViewModel L348-350).",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Empty password on submit",
+      "expected": "NEEDS_REVIEW — validatePassword exists but is not applied on submit; request is sent without password",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGLoginViewModel.checkforAnyValidationError",
+      "review_flag": "NEEDS_REVIEW",
+      "review_note": "checkforAnyValidationError clears password validation instead of checking it (NGLoginViewModel L348-350).",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Leave password empty",
+        "Tap Login"
+      ]
+    },
+    {
+      "id": 21,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_028",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs API mocking",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Server error on login shows generic message",
+      "expected": "Banner 'There is some technical error. Please try again later'",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGLoginViewModel L116-117",
+      "review_flag": "",
+      "review_note": "Needs API mocking",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Submit credentials"
+      ]
+    },
+    {
+      "id": 22,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_029",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs API mocking",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Login success without AT/RT headers",
+      "expected": "Generic error banner; user not logged in",
+      "priority": "P3",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGLoginViewModel L97-99",
+      "review_flag": "",
+      "review_note": "Needs API mocking",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Submit credentials"
+      ]
+    },
+    {
+      "id": 23,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_030",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Max 20 chars may block users with longer existing passwords — confirm.",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Password field: secure entry, max 20 chars, forgot-password link",
+      "expected": "Input masked, max 20 characters, Forgot Password visible",
+      "priority": "P2",
+      "severity": "Minor",
+      "jira_ref": "",
+      "requirement_ref": "NGLoginViewModel.createPasswordTypeModel",
+      "review_flag": "NEEDS_REVIEW",
+      "review_note": "Max 20 chars may block users with longer existing passwords — confirm.",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Type 25 chars",
+        "Check masking and Forgot Password"
+      ]
+    },
+    {
+      "id": 24,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_031",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Expected offline UX not specified.",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "No internet on Continue",
+      "expected": "NEEDS_REVIEW — expected offline message not defined",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "Router error handling",
+      "review_flag": "NEEDS_REVIEW",
+      "review_note": "Expected offline UX not specified.",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Enter email",
+        "Tap Continue"
+      ]
+    },
+    {
+      "id": 25,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_032",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging test account",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Session persists after relaunch",
+      "expected": "User remains logged in",
+      "priority": "P1",
+      "severity": "Critical",
+      "jira_ref": "",
+      "requirement_ref": "NGOAuthHelper token storage",
+      "review_flag": "",
+      "review_note": "Needs staging test account",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Kill app",
+        "Relaunch"
+      ]
+    },
+    {
+      "id": 26,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_033",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "Needs staging test account",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Logout then login again",
+      "expected": "Logout succeeds; re-login succeeds",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "LoginEndPoint.logoutUserToServer",
+      "review_flag": "",
+      "review_note": "Needs staging test account",
+      "automation_status": "BLOCKED",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Logout",
+        "Login with same account"
+      ]
+    },
+    {
+      "id": 27,
+      "run_id": "RUN_20261102_221420",
+      "test_id": "LOGIN_034",
+      "status": "NOT_EXECUTED",
+      "duration_s": 0.0,
+      "actual": "External providers; manual only",
+      "error": "",
+      "failure_class": "",
+      "attachments": [],
+      "feature": "Login",
+      "title": "Social / UAE PASS login buttons",
+      "expected": "Provider auth opens; on success user is logged in or routed to registration",
+      "priority": "P2",
+      "severity": "Major",
+      "jira_ref": "",
+      "requirement_ref": "NGSmartLoginRRVC social handlers",
+      "review_flag": "",
+      "review_note": "External providers; manual only",
+      "automation_status": "MANUAL",
+      "approval_status": "CANDIDATE",
+      "source_files": [
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+        "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+        "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+        "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+      ],
+      "steps": [
+        "Tap each provider"
+      ]
+    }
+  ]
+}

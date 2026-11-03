@@ -1,0 +1,60 @@
+Attributes: Application, 0x7fa097319ad0, pid: 88063, label: 'Naukrigulf'
+Element subtree:
+ →Application, 0x7fa097319ad0, pid: 88063, label: 'Naukrigulf'
+    Window (Main), 0x7fa0973113c0, {{0.0, 0.0}, {393.0, 852.0}}
+      Other, 0x7fa09731ec40, {{0.0, 0.0}, {393.0, 852.0}}
+        Other, 0x7fa09731ed60, {{0.0, 0.0}, {393.0, 852.0}}
+          Other, 0x7fa097318140, {{0.0, 0.0}, {393.0, 852.0}}
+            Other, 0x7fa09731e840, {{0.0, 0.0}, {393.0, 852.0}}
+              Other, 0x7fa09731ee80, {{0.0, 0.0}, {393.0, 852.0}}
+                Other, 0x7fa09731b970, {{0.0, 0.0}, {393.0, 852.0}}
+                  Other, 0x7fa09731ba90, {{0.0, 0.0}, {393.0, 852.0}}
+                    Other, 0x7fa09731e3c0, {{0.0, 0.0}, {393.0, 852.0}}
+                      Other, 0x7fa09731e4e0, {{0.0, 0.0}, {393.0, 852.0}}
+                        ScrollView, 0x7fa09731e600, {{0.0, 0.0}, {393.0, 852.0}}
+                          Other, 0x7fa09731e720, {{0.0, 0.0}, {393.0, 852.0}}
+                            Image, 0x7fa09731f6a0, {{0.0, 0.0}, {393.0, 852.0}}, identifier: 'LoginBG'
+                            Image, 0x7fa09731f7c0, {{20.0, 130.0}, {141.0, 28.0}}, identifier: 'NGLogo'
+                            Other, 0x7fa09731f8e0, {{0.0, 178.0}, {393.0, 674.0}}
+                              StaticText, 0x7fa09731fa00, {{20.0, 214.0}, {353.0, 29.0}}, label: 'Welcome to Naukrigulf'
+                              Table, 0x7fa09731fb20, {{4.0, 263.0}, {385.0, 114.0}}
+                                Cell, 0x7fa09731fc40, {{4.0, 263.0}, {385.0, 110.0}}
+                                  Other, 0x7fa09731fd60, {{4.0, 263.0}, {385.0, 110.0}}
+                                  StaticText, 0x7fa09731fe80, {{20.0, 273.0}, {353.0, 18.0}}, label: 'Email ID'
+                                  TextField, 0x7fa09731ffa0, {{36.0, 304.7}, {313.0, 30.0}}, label: 'Email ID', placeholderValue: 'Email ID'
+                                  Other, 0x7fa0973200c0, {{12.0, 445.0}, {304.0, 1.0}}
+                                Other, 0x7fa0973201e0, {{356.0, 263.0}, {30.0, 114.0}}, label: 'Vertical scroll bar, 1 page', value: 0%
+                                  Other, 0x7fa097320300, {{383.0, 367.0}, {3.0, 7.0}}
+                              Button, 0x7fa097320420, {{20.0, 377.0}, {353.0, 45.0}}, label: 'Continue with email'
+                                StaticText, 0x7fa097320540, {{132.7, 391.0}, {128.0, 17.0}}, label: 'Continue with email'
+                              Other, 0x7fa097320660, {{20.0, 442.0}, {353.0, 17.0}}
+                                StaticText, 0x7fa097320780, {{190.0, 442.0}, {13.0, 17.0}}, label: 'or'
+                                Other, 0x7fa0973208a0, {{20.0, 450.0}, {161.0, 1.0}}
+                                Other, 0x7fa0973209c0, {{212.0, 450.0}, {161.0, 1.0}}
+                              Other, 0x7fa097320ae0, {{20.0, 479.0}, {353.0, 216.0}}
+                                Button, 0x7fa097320c00, {{20.0, 479.0}, {353.0, 45.0}}, label: 'Login with UAE PASS'
+                                  StaticText, 0x7fa097320d20, {{146.0, 493.0}, {137.0, 17.0}}, label: 'Login with UAE PASS'
+                                Button, 0x7fa097320e40, {{20.0, 536.0}, {353.0, 45.0}}, label: 'Continue with Google'
+                                  StaticText, 0x7fa097321220, {{144.3, 550.0}, {140.0, 17.0}}, label: 'Continue with Google'
+                                Button, 0x7fa097321340, {{20.0, 593.0}, {353.0, 45.0}}, label: 'Continue with Apple'
+                                  StaticText, 0x7fa097321460, {{148.7, 607.0}, {132.0, 17.0}}, label: 'Continue with Apple'
+                                Button, 0x7fa097321580, {{20.0, 650.0}, {353.0, 45.0}}, label: 'Continue with Facebook'
+                                  StaticText, 0x7fa0973216a0, {{136.7, 664.0}, {156.0, 17.0}}, label: 'Continue with Facebook'
+                              TextView, 0x7fa0973217c0, {{30.0, 707.0}, {333.0, 45.0}}, value: I agree with Naukr...
+                                TextView, 0x7fa0973218e0, {{72.3, 715.0}, {251.3, 14.4}}, label: 'I agree with Naukrigulf terms & conditions and '
+                                  Link, 0x7fa097321a00, {{193.8, 715.0}, {104.1, 14.4}}, label: ' terms & conditions'
+                                TextView, 0x7fa097321b20, {{159.6, 729.4}, {73.9, 14.4}}, label: 'privacy policy'
+                                  Link, 0x7fa097321c40, {{159.6, 715.0}, {164.1, 28.8}}, label: '
+privacy policy'
+                          Other, 0x7fa097321d60, {{49.3, 785.0}, {294.3, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                            Other, 0x7fa097321e80, {{383.0, 812.0}, {7.0, 3.0}}
+                          Other, 0x7fa097321fa0, {{49.3, 785.0}, {294.3, 30.0}}, label: 'Horizontal scroll bar, 1 page', value: 0%
+                            Other, 0x7fa0973220c0, {{383.0, 812.0}, {7.0, 3.0}}
+                        Button, 0x7fa0973221e0, {{3.0, 44.0}, {56.0, 40.0}}, label: 'LeftwhiteArrow'
+Path to element:
+ →Application, 0x7fa097319ad0, pid: 88063, label: 'Naukrigulf'
+Query chain:
+ →Find: Target Application 'com.infoedge.NaukriGulf'
+  Output: {
+    Application, 0x7fa097322960, pid: 88063, label: 'Naukrigulf'
+  }

@@ -1,0 +1,501 @@
+{
+  "feature": "Login",
+  "jira_ref": "",
+  "source_files": [
+    "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+    "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVM.swift",
+    "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+    "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewModel.swift",
+    "NaukriGulf/Classes/Utility/NGValidationManager.swift",
+    "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+  ],
+  "cases": [
+    {
+      "id": "LOGIN_001",
+      "title": "Login screen opens from Jobs home Login button",
+      "type": "positive/navigation",
+      "pre": "App freshly launched, user logged out",
+      "steps": [
+        "Launch app",
+        "Tap 'Login' on Jobs home"
+      ],
+      "data": {},
+      "expected": "Login screen with 'Welcome to Naukrigulf' and Email ID field is displayed",
+      "priority": "P1",
+      "severity": "Critical",
+      "automation": "automated",
+      "ref": "test_LOGIN_001_opensFromHome",
+      "req": "Runtime exploration 2026-11-02 + NGSmartLoginRRVC.swift"
+    },
+    {
+      "id": "LOGIN_002",
+      "title": "Login screen shows all entry options",
+      "type": "ui",
+      "pre": "On Login screen",
+      "steps": [
+        "Open Login screen",
+        "Inspect elements"
+      ],
+      "data": {},
+      "expected": "Email ID field, 'Continue with email', 'Login with UAE PASS', 'Continue with Google', 'Continue with Apple', 'Continue with Facebook' are present",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "automated",
+      "ref": "test_LOGIN_002_showsAllOptions",
+      "req": "NGSmartLoginRRVC.buttonSetUp / runtime exploration"
+    },
+    {
+      "id": "LOGIN_003",
+      "title": "Back arrow returns to Jobs home",
+      "type": "navigation",
+      "pre": "On Login screen",
+      "steps": [
+        "Open Login screen",
+        "Tap back arrow"
+      ],
+      "data": {},
+      "expected": "Jobs home with 'Login' and 'Register' buttons is shown again",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "automated",
+      "ref": "test_LOGIN_003_backReturnsHome",
+      "req": "NGSmartLoginRRVC.handleCloseBtnTap"
+    },
+    {
+      "id": "LOGIN_004",
+      "title": "Continue with empty email does not proceed",
+      "type": "negative/empty",
+      "pre": "On Login screen",
+      "steps": [
+        "Leave Email ID empty",
+        "Tap 'Continue with email'"
+      ],
+      "data": {
+        "email": ""
+      },
+      "expected": "User stays on Login screen; no API call is made",
+      "priority": "P1",
+      "severity": "Major",
+      "automation": "automated",
+      "ref": "test_LOGIN_004_emptyEmailStays",
+      "review": "Code passes isShowValdText=false for empty input, so 'Please specify your Email ID' may never be shown. Is a silent no-op the intended UX?",
+      "req": "NGSmartLoginRRVC.handleContinueBtnTap L214-221; NGSmartLoginRRVM L58-62"
+    },
+    {
+      "id": "LOGIN_005",
+      "title": "Invalid email shows validation message",
+      "type": "negative/invalid",
+      "pre": "On Login screen",
+      "steps": [
+        "Type 'abc' in Email ID",
+        "Tap 'Continue with email'"
+      ],
+      "data": {
+        "email": "abc"
+      },
+      "expected": "'Please enter a valid email ID' is displayed and user stays on Login screen",
+      "priority": "P1",
+      "severity": "Major",
+      "automation": "automated",
+      "ref": "test_LOGIN_005_invalidEmailShowsError",
+      "req": "NGValidationManager.validateEmailAddress; en.lproj 'Please enter a valid email id'"
+    },
+    {
+      "id": "LOGIN_006",
+      "title": "Malformed email formats are rejected",
+      "type": "negative/invalid",
+      "pre": "On Login screen",
+      "steps": [
+        "For each value: type it, tap 'Continue with email'"
+      ],
+      "data": {
+        "emails": [
+          "abc@",
+          "abc@domain",
+          "@domain.com",
+          "abc@domain.c",
+          "abc@@domain.com"
+        ]
+      },
+      "expected": "'Please enter a valid email ID' is displayed for every value",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "automated",
+      "ref": "test_LOGIN_006_malformedEmailsRejected",
+      "req": "NGValidationManager regexEmail [A-Z0-9a-z._+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}"
+    },
+    {
+      "id": "LOGIN_007",
+      "title": "Email with TLD longer than 4 letters",
+      "type": "boundary",
+      "pre": "On Login screen",
+      "steps": [
+        "Type 'qa.test@example.museum'",
+        "End editing"
+      ],
+      "data": {
+        "email": "qa.test@example.museum"
+      },
+      "expected": "NEEDS_REVIEW — code regex rejects TLDs > 4 letters (.museum, .technology) although they are valid addresses",
+      "priority": "P3",
+      "severity": "Minor",
+      "automation": "observation",
+      "ref": "test_OBS_LOGIN_007_longTLD",
+      "review": "Should valid long-TLD emails be accepted? Current regex rejects them.",
+      "req": "NGValidationManager regexEmail"
+    },
+    {
+      "id": "LOGIN_008",
+      "title": "Valid email format shows no validation error",
+      "type": "positive",
+      "pre": "On Login screen",
+      "steps": [
+        "Type 'qa.test@example.com'",
+        "End editing (no submit)"
+      ],
+      "data": {
+        "email": "qa.test@example.com"
+      },
+      "expected": "No validation message is displayed",
+      "priority": "P1",
+      "severity": "Major",
+      "automation": "automated",
+      "ref": "test_LOGIN_008_validEmailNoError",
+      "req": "NGValidationManager.validateEmailAddress"
+    },
+    {
+      "id": "LOGIN_009",
+      "title": "Email field limited to 80 characters",
+      "type": "boundary",
+      "pre": "On Login screen",
+      "steps": [
+        "Type 85 characters into Email ID"
+      ],
+      "data": {
+        "length": 85
+      },
+      "expected": "Field holds at most 80 characters (maxCharacterAllowed = 80)",
+      "priority": "P3",
+      "severity": "Minor",
+      "automation": "automated",
+      "ref": "test_LOGIN_009_emailMaxLength80",
+      "req": "NGSmartLoginRRVM L35, L73-75; runtime RUN_20261102_221949: limit enforced (85 typed -> 80 kept)"
+    },
+    {
+      "id": "LOGIN_010",
+      "title": "Plus-addressing and dots are accepted",
+      "type": "positive/special-chars",
+      "pre": "On Login screen",
+      "steps": [
+        "Type 'qa.test+ng_01@example.co'",
+        "End editing"
+      ],
+      "data": {
+        "email": "qa.test+ng_01@example.co"
+      },
+      "expected": "No validation message is displayed",
+      "priority": "P3",
+      "severity": "Minor",
+      "automation": "automated",
+      "ref": "test_LOGIN_010_specialCharsAccepted",
+      "req": "NGValidationManager regexEmail"
+    },
+    {
+      "id": "LOGIN_011",
+      "title": "Email with surrounding spaces",
+      "type": "negative/whitespace",
+      "pre": "On Login screen",
+      "steps": [
+        "Type ' qa.test@example.com '",
+        "End editing"
+      ],
+      "data": {
+        "email": " qa.test@example.com "
+      },
+      "expected": "NEEDS_REVIEW — should input be trimmed or rejected?",
+      "priority": "P3",
+      "severity": "Minor",
+      "automation": "observation",
+      "ref": "test_OBS_LOGIN_011_surroundingSpaces",
+      "review": "Requirement on trimming whitespace is not defined.",
+      "req": "NGValidationManager regexEmail"
+    },
+    {
+      "id": "LOGIN_012",
+      "title": "Login screen controls have accessibility labels",
+      "type": "accessibility",
+      "pre": "On Login screen",
+      "steps": [
+        "Inspect all buttons and text fields"
+      ],
+      "data": {},
+      "expected": "Every button and text field exposes a non-empty accessibility label",
+      "priority": "P3",
+      "severity": "Minor",
+      "automation": "automated",
+      "ref": "test_LOGIN_012_accessibilityLabels",
+      "req": "General accessibility"
+    },
+    {
+      "id": "LOGIN_020",
+      "title": "New email continues to Registration",
+      "type": "positive/api",
+      "pre": "Staging env; email not registered",
+      "steps": [
+        "Enter unregistered email",
+        "Tap 'Continue with email'"
+      ],
+      "data": {
+        "email": "<new staging email>"
+      },
+      "expected": "GET /ngprofile/user/emailValidation returns 200 and Registration screen opens",
+      "priority": "P1",
+      "severity": "Critical",
+      "automation": "blocked",
+      "blocker": "Needs staging environment + test data",
+      "req": "NGSmartLoginRRVC.handleContinueBtnTap L227-243"
+    },
+    {
+      "id": "LOGIN_021",
+      "title": "Existing email continues to password screen with email prefilled",
+      "type": "positive/api",
+      "pre": "Staging env; registered test account",
+      "steps": [
+        "Enter registered email",
+        "Tap 'Continue with email'"
+      ],
+      "data": {
+        "email": "<staging account>"
+      },
+      "expected": "emailValidation returns 400 and password screen opens with email prefilled",
+      "priority": "P1",
+      "severity": "Critical",
+      "automation": "blocked",
+      "blocker": "Needs staging test account",
+      "req": "NGSmartLoginRRVC.handleContinueBtnTap L244-245"
+    },
+    {
+      "id": "LOGIN_022",
+      "title": "emailValidation server error / timeout",
+      "type": "negative/api-failure",
+      "pre": "Mocked 5xx or timeout",
+      "steps": [
+        "Enter email",
+        "Tap 'Continue with email'"
+      ],
+      "data": {},
+      "expected": "NEEDS_REVIEW — code shows no message for non-200/400 responses; button is re-enabled",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs API mocking",
+      "review": "No user feedback on server error/timeout in handleContinueBtnTap. Intended?",
+      "req": "NGSmartLoginRRVC.handleContinueBtnTap"
+    },
+    {
+      "id": "LOGIN_023",
+      "title": "Rapid taps on Continue send one request",
+      "type": "negative/rapid-tap",
+      "pre": "Staging env",
+      "steps": [
+        "Enter email",
+        "Tap 'Continue with email' 5 times quickly"
+      ],
+      "data": {},
+      "expected": "Only one emailValidation request is sent (preventMultipleTaps 30s)",
+      "priority": "P3",
+      "severity": "Minor",
+      "automation": "blocked",
+      "blocker": "Needs staging env + request inspection",
+      "req": "NGSmartLoginRRVC L222 preventMultipleTaps(for: 30)"
+    },
+    {
+      "id": "LOGIN_024",
+      "title": "Correct password logs the user in",
+      "type": "positive/api",
+      "pre": "Staging test account",
+      "steps": [
+        "Reach password screen",
+        "Enter correct password",
+        "Tap Login"
+      ],
+      "data": {},
+      "expected": "POST /nglogin/user/login succeeds; AT/RT saved; logged-in tabs shown",
+      "priority": "P1",
+      "severity": "Critical",
+      "automation": "blocked",
+      "blocker": "Needs staging test account",
+      "req": "NGLoginViewModel.updateToServer L59-96"
+    },
+    {
+      "id": "LOGIN_025",
+      "title": "Wrong password shows invalid credentials banner",
+      "type": "negative/api",
+      "pre": "Staging test account",
+      "steps": [
+        "Reach password screen",
+        "Enter wrong password",
+        "Tap Login"
+      ],
+      "data": {},
+      "expected": "401 -> banner 'Invalid username or password'",
+      "priority": "P1",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs staging test account",
+      "req": "NGLoginViewModel L110-111"
+    },
+    {
+      "id": "LOGIN_026",
+      "title": "Too many attempts shows rate-limit banner",
+      "type": "negative/api",
+      "pre": "Staging; repeated wrong passwords",
+      "steps": [
+        "Submit wrong password until 429"
+      ],
+      "data": {},
+      "expected": "429 -> banner 'Too Many tries! Please try after some time!'",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs staging account safe to lock",
+      "req": "NGLoginViewModel L113-114"
+    },
+    {
+      "id": "LOGIN_027",
+      "title": "Empty password on submit",
+      "type": "negative/empty",
+      "pre": "On password screen",
+      "steps": [
+        "Leave password empty",
+        "Tap Login"
+      ],
+      "data": {},
+      "expected": "NEEDS_REVIEW — validatePassword exists but is not applied on submit; request is sent without password",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs staging test account to reach password screen",
+      "review": "checkforAnyValidationError clears password validation instead of checking it (NGLoginViewModel L348-350).",
+      "req": "NGLoginViewModel.checkforAnyValidationError"
+    },
+    {
+      "id": "LOGIN_028",
+      "title": "Server error on login shows generic message",
+      "type": "negative/api-failure",
+      "pre": "Mocked 5xx",
+      "steps": [
+        "Submit credentials"
+      ],
+      "data": {},
+      "expected": "Banner 'There is some technical error. Please try again later'",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs API mocking",
+      "req": "NGLoginViewModel L116-117"
+    },
+    {
+      "id": "LOGIN_029",
+      "title": "Login success without AT/RT headers",
+      "type": "negative/invalid-response",
+      "pre": "Mocked 200 without AT/RT/AT_EXPIRY headers",
+      "steps": [
+        "Submit credentials"
+      ],
+      "data": {},
+      "expected": "Generic error banner; user not logged in",
+      "priority": "P3",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs API mocking",
+      "req": "NGLoginViewModel L97-99"
+    },
+    {
+      "id": "LOGIN_030",
+      "title": "Password field: secure entry, max 20 chars, forgot-password link",
+      "type": "ui/boundary",
+      "pre": "On password screen",
+      "steps": [
+        "Type 25 chars",
+        "Check masking and Forgot Password"
+      ],
+      "data": {},
+      "expected": "Input masked, max 20 characters, Forgot Password visible",
+      "priority": "P2",
+      "severity": "Minor",
+      "automation": "blocked",
+      "blocker": "Needs staging test account to reach password screen",
+      "review": "Max 20 chars may block users with longer existing passwords — confirm.",
+      "req": "NGLoginViewModel.createPasswordTypeModel"
+    },
+    {
+      "id": "LOGIN_031",
+      "title": "No internet on Continue",
+      "type": "negative/network",
+      "pre": "Network disabled",
+      "steps": [
+        "Enter email",
+        "Tap Continue"
+      ],
+      "data": {},
+      "expected": "NEEDS_REVIEW — expected offline message not defined",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs network conditioning",
+      "review": "Expected offline UX not specified.",
+      "req": "Router error handling"
+    },
+    {
+      "id": "LOGIN_032",
+      "title": "Session persists after relaunch",
+      "type": "session",
+      "pre": "Logged in",
+      "steps": [
+        "Kill app",
+        "Relaunch"
+      ],
+      "data": {},
+      "expected": "User remains logged in",
+      "priority": "P1",
+      "severity": "Critical",
+      "automation": "blocked",
+      "blocker": "Needs staging test account",
+      "req": "NGOAuthHelper token storage"
+    },
+    {
+      "id": "LOGIN_033",
+      "title": "Logout then login again",
+      "type": "session",
+      "pre": "Logged in",
+      "steps": [
+        "Logout",
+        "Login with same account"
+      ],
+      "data": {},
+      "expected": "Logout succeeds; re-login succeeds",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "blocked",
+      "blocker": "Needs staging test account",
+      "req": "LoginEndPoint.logoutUserToServer"
+    },
+    {
+      "id": "LOGIN_034",
+      "title": "Social / UAE PASS login buttons",
+      "type": "integration",
+      "pre": "Test social accounts",
+      "steps": [
+        "Tap each provider"
+      ],
+      "data": {},
+      "expected": "Provider auth opens; on success user is logged in or routed to registration",
+      "priority": "P2",
+      "severity": "Major",
+      "automation": "manual",
+      "blocker": "External providers; manual only",
+      "req": "NGSmartLoginRRVC social handlers"
+    }
+  ]
+}

@@ -1,0 +1,1918 @@
+{
+  "generated_at": "2026-11-02T22:11:28",
+  "repo": "/Users/mradul.atray/Desktop/infoedge_Project/naukri_gulf/SwiftRevamp/NaukriGulf",
+  "counts": {
+    "plist": 9,
+    "storyboard": 14,
+    "strings": 2,
+    "swift": 1059,
+    "xib": 310
+  },
+  "symbol_counts": {
+    "ax_ids": 1,
+    "cell": 343,
+    "endpoint_enum": 30,
+    "ib_reference": 901,
+    "model": 342,
+    "type": 1770,
+    "view_controller": 148,
+    "view_model": 97
+  },
+  "features": [
+    {
+      "name": "JobsTab",
+      "folder": "JobsTab",
+      "file_count": 274,
+      "view_controllers": 27,
+      "view_models": 18
+    },
+    {
+      "name": "ProfileTab",
+      "folder": "ProfileTab",
+      "file_count": 194,
+      "view_controllers": 28,
+      "view_models": 24
+    },
+    {
+      "name": "Shared/CoreData",
+      "folder": "Shared/CoreData",
+      "file_count": 126,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "ActivityTab",
+      "folder": "ActivityTab",
+      "file_count": 106,
+      "view_controllers": 9,
+      "view_models": 6
+    },
+    {
+      "name": "CommonCellandView",
+      "folder": "CommonCellandView",
+      "file_count": 105,
+      "view_controllers": 1,
+      "view_models": 0
+    },
+    {
+      "name": "MoreTab",
+      "folder": "MoreTab",
+      "file_count": 101,
+      "view_controllers": 16,
+      "view_models": 14
+    },
+    {
+      "name": "Shared/ThirdParty",
+      "folder": "Shared/ThirdParty",
+      "file_count": 84,
+      "view_controllers": 2,
+      "view_models": 2
+    },
+    {
+      "name": "RegistrationFlow",
+      "folder": "RegistrationFlow",
+      "file_count": 64,
+      "view_controllers": 22,
+      "view_models": 12
+    },
+    {
+      "name": "Shared/NetworkingSwift",
+      "folder": "Shared/NetworkingSwift",
+      "file_count": 51,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "PushdownFlow",
+      "folder": "PushdownFlow",
+      "file_count": 46,
+      "view_controllers": 2,
+      "view_models": 8
+    },
+    {
+      "name": "Shared/Extensions",
+      "folder": "Shared/Extensions",
+      "file_count": 26,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "NewResman",
+      "folder": "NewResman",
+      "file_count": 25,
+      "view_controllers": 11,
+      "view_models": 6
+    },
+    {
+      "name": "ExploreTab",
+      "folder": "ExploreTab",
+      "file_count": 23,
+      "view_controllers": 1,
+      "view_models": 1
+    },
+    {
+      "name": "LoginClass",
+      "folder": "LoginClass",
+      "file_count": 19,
+      "view_controllers": 5,
+      "view_models": 3
+    },
+    {
+      "name": "Shared/Utility",
+      "folder": "Shared/Utility",
+      "file_count": 17,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/CommonClass",
+      "folder": "Shared/CommonClass",
+      "file_count": 16,
+      "view_controllers": 2,
+      "view_models": 0
+    },
+    {
+      "name": "CommonInputModels",
+      "folder": "CommonInputModels",
+      "file_count": 15,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/ExternalLib",
+      "folder": "Shared/ExternalLib",
+      "file_count": 15,
+      "view_controllers": 1,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/HelperClass",
+      "folder": "Shared/HelperClass",
+      "file_count": 14,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/Resources",
+      "folder": "Shared/Resources",
+      "file_count": 13,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/DropDownsUtil",
+      "folder": "Shared/DropDownsUtil",
+      "file_count": 11,
+      "view_controllers": 5,
+      "view_models": 0
+    },
+    {
+      "name": "UnRegFlow",
+      "folder": "UnRegFlow",
+      "file_count": 8,
+      "view_controllers": 2,
+      "view_models": 2
+    },
+    {
+      "name": "CommonControllers",
+      "folder": "CommonControllers",
+      "file_count": 7,
+      "view_controllers": 4,
+      "view_models": 1
+    },
+    {
+      "name": "Shared/Base",
+      "folder": "Shared/Base",
+      "file_count": 7,
+      "view_controllers": 2,
+      "view_models": 0
+    },
+    {
+      "name": "NavigationBarViews",
+      "folder": "NavigationBarViews",
+      "file_count": 4,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/Tabs",
+      "folder": "Shared/Tabs",
+      "file_count": 4,
+      "view_controllers": 4,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/DataManagerClasses",
+      "folder": "Shared/DataManagerClasses",
+      "file_count": 2,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/NotificationService",
+      "folder": "Shared/NotificationService",
+      "file_count": 2,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "EventPageFlow",
+      "folder": "EventPageFlow",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "NGDocumentPreviewViewController.swift",
+      "folder": "NGDocumentPreviewViewController.swift",
+      "file_count": 1,
+      "view_controllers": 1,
+      "view_models": 0
+    },
+    {
+      "name": "NGTabsControllerClass.swift",
+      "folder": "NGTabsControllerClass.swift",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/AppApiSecurityHeader.swift",
+      "folder": "Shared/AppApiSecurityHeader.swift",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/AppDelegate.swift",
+      "folder": "Shared/AppDelegate.swift",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/AppIntent",
+      "folder": "Shared/AppIntent",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/BGTasksHelper.swift",
+      "folder": "Shared/BGTasksHelper.swift",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/BaseViewController.swift",
+      "folder": "Shared/BaseViewController.swift",
+      "file_count": 1,
+      "view_controllers": 1,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/InitialViewController.swift",
+      "folder": "Shared/InitialViewController.swift",
+      "file_count": 1,
+      "view_controllers": 1,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/KeychainHelper.swift",
+      "folder": "Shared/KeychainHelper.swift",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/LaunchScreen",
+      "folder": "Shared/LaunchScreen",
+      "file_count": 1,
+      "view_controllers": 1,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/NaukriGulf",
+      "folder": "Shared/NaukriGulf",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/TestingFlow",
+      "folder": "Shared/TestingFlow",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/ar.lproj",
+      "folder": "Shared/ar.lproj",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    },
+    {
+      "name": "Shared/en.lproj",
+      "folder": "Shared/en.lproj",
+      "file_count": 1,
+      "view_controllers": 0,
+      "view_models": 0
+    }
+  ],
+  "endpoints": [
+    {
+      "enum_name": "ActivityEndPoint",
+      "case_name": "getActivityListing",
+      "http_method": "",
+      "url_path": "/ngaggregator/user",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ActivityEndPoint.swift"
+    },
+    {
+      "enum_name": "ActivityEndPoint",
+      "case_name": "getEmployerActionApi",
+      "http_method": "",
+      "url_path": "/mynaukrigulf/JobseekerService/v1/user/employerActivity",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ActivityEndPoint.swift"
+    },
+    {
+      "enum_name": "ActivityEndPoint",
+      "case_name": "getSearchAppearance",
+      "http_method": "",
+      "url_path": "/mynaukrigulf/JobseekerService/v1/user/searchAppearance",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ActivityEndPoint.swift"
+    },
+    {
+      "enum_name": "ActivityEndPoint",
+      "case_name": "getWhatmaDetailInfo",
+      "http_method": "",
+      "url_path": "/spapply/jobapplier/user/v1/applicationdetails",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ActivityEndPoint.swift"
+    },
+    {
+      "enum_name": "ActivityEndPoint",
+      "case_name": "getWhatmaEasyAppliedList",
+      "http_method": "",
+      "url_path": "/spapply/jobapplier/user/v1/easyApplyList",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ActivityEndPoint.swift"
+    },
+    {
+      "enum_name": "ActivityEndPoint",
+      "case_name": "getWhatmaExternalAppliedList",
+      "http_method": "",
+      "url_path": "/spapply/jobapplier/user/v1/webdetails",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ActivityEndPoint.swift"
+    },
+    {
+      "enum_name": "ApplyEndPoints",
+      "case_name": "applyByEmail",
+      "http_method": "",
+      "url_path": "/spapi/jobs/jobEmail",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ApplyEndPoints.swift"
+    },
+    {
+      "enum_name": "ApplyEndPoints",
+      "case_name": "easyApply",
+      "http_method": "",
+      "url_path": "/spapply/jobapplier/apply/v2",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ApplyEndPoints.swift"
+    },
+    {
+      "enum_name": "ApplyEndPoints",
+      "case_name": "unregApply",
+      "http_method": "",
+      "url_path": "/spapply/jobapplier/unreg/apply/v2",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ApplyEndPoints.swift"
+    },
+    {
+      "enum_name": "CustomJobAlertEndPoints",
+      "case_name": "deleteCustomJobAlert",
+      "http_method": "POST",
+      "url_path": "/spapi/alerts/delete",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/CustomJobAlertEndPoints.swift"
+    },
+    {
+      "enum_name": "CustomJobAlertEndPoints",
+      "case_name": "fetchAllCustomJobAlertList",
+      "http_method": "GET",
+      "url_path": "/spapi/alerts",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/CustomJobAlertEndPoints.swift"
+    },
+    {
+      "enum_name": "CustomJobAlertEndPoints",
+      "case_name": "getMatchingAlert",
+      "http_method": "POST",
+      "url_path": "/spapi/alerts/matchingAlert",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/CustomJobAlertEndPoints.swift"
+    },
+    {
+      "enum_name": "CustomJobAlertEndPoints",
+      "case_name": "replaceCustomJobAlert",
+      "http_method": "POST",
+      "url_path": "/spapi/alerts/replace/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/CustomJobAlertEndPoints.swift"
+    },
+    {
+      "enum_name": "CustomJobAlertEndPoints",
+      "case_name": "saveNewCustomAlert",
+      "http_method": "POST",
+      "url_path": "/spapi/alerts",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/CustomJobAlertEndPoints.swift"
+    },
+    {
+      "enum_name": "CustomJobAlertEndPoints",
+      "case_name": "updateCustomJobAlert",
+      "http_method": "POST",
+      "url_path": "/spapi/alerts/update",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/CustomJobAlertEndPoints.swift"
+    },
+    {
+      "enum_name": "DropDownEndPoints",
+      "case_name": "checkForDropdownDataVersionUpdate",
+      "http_method": "GET",
+      "url_path": "/dropdown-services/v0/dropdowns/version",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/DropDownEndPoints.swift"
+    },
+    {
+      "enum_name": "DropDownEndPoints",
+      "case_name": "getCombinedValidationMappedData",
+      "http_method": "GET",
+      "url_path": "/s/2/200/j/combinedValidator.json",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/DropDownEndPoints.swift"
+    },
+    {
+      "enum_name": "DropDownEndPoints",
+      "case_name": "getCompIAMappedData",
+      "http_method": "GET",
+      "url_path": "/s/2/200/j/compWithIndAreaSugg.json",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/DropDownEndPoints.swift"
+    },
+    {
+      "enum_name": "DropDownEndPoints",
+      "case_name": "getDesigFAMappedData",
+      "http_method": "GET",
+      "url_path": "/s/2/200/j/desigWithFAreaSugg.json",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/DropDownEndPoints.swift"
+    },
+    {
+      "enum_name": "DropDownEndPoints",
+      "case_name": "getDropdownDataByDDName",
+      "http_method": "GET",
+      "url_path": "/dropdown-services/v0/dropdowns/\\(ddName)/items",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/DropDownEndPoints.swift"
+    },
+    {
+      "enum_name": "DynamicLinkEndpoint",
+      "case_name": "fetchClickAndTrack",
+      "http_method": "POST",
+      "url_path": "/cloudgateway-ccs/url-shortener-services/v0/track/click-track",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/DynamicLinkEndPoints.swift"
+    },
+    {
+      "enum_name": "DynamicLinkEndpoint",
+      "case_name": "fetchGetAndTrack",
+      "http_method": "POST",
+      "url_path": "/cloudgateway-ccs/url-shortener-services/v0/track/get-track",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/DynamicLinkEndPoints.swift"
+    },
+    {
+      "enum_name": "ExchangeEndPoint",
+      "case_name": "decryptEmailToken",
+      "http_method": "",
+      "url_path": "/nglogin/token/_decrypt",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ExchangeEndPoint.swift"
+    },
+    {
+      "enum_name": "ExchangeEndPoint",
+      "case_name": "getAtRtForConmailer",
+      "http_method": "",
+      "url_path": "/nglogin/user/exchangeToken",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ExchangeEndPoint.swift"
+    },
+    {
+      "enum_name": "ExchangeEndPoint",
+      "case_name": "getConmailerFromAT",
+      "http_method": "",
+      "url_path": "/nglogin/user/self/authToken",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ExchangeEndPoint.swift"
+    },
+    {
+      "enum_name": "ExchangeEndPoint",
+      "case_name": "verifiyEmailWithToken",
+      "http_method": "",
+      "url_path": "/nglogin/user/emailVerificationLoginApp",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ExchangeEndPoint.swift"
+    },
+    {
+      "enum_name": "ExploreEndPoint",
+      "case_name": "getExploreTabData",
+      "http_method": "",
+      "url_path": "/careertips/api/postsList",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ExploreEndPoint.swift"
+    },
+    {
+      "enum_name": "ExploreEndPoint",
+      "case_name": "postSubmitPollResponseForLoggedIn",
+      "http_method": "",
+      "url_path": "/ngpolls/central-poll-services/v0/poll/self/interact",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ExploreEndPoint.swift"
+    },
+    {
+      "enum_name": "ExploreEndPoint",
+      "case_name": "postSubmitPollResponseForLoggedOut",
+      "http_method": "",
+      "url_path": "/ngpolls/central-poll-services/v0/poll/public/interact",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ExploreEndPoint.swift"
+    },
+    {
+      "enum_name": "FeedBackEndPoints",
+      "case_name": "newPostUserFeedBack",
+      "http_method": "POST",
+      "url_path": "/ngprofile/loggedInUserFeedback/self",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/FeedBackEndPoints.swift"
+    },
+    {
+      "enum_name": "FeedBackEndPoints",
+      "case_name": "postUserFeedBack",
+      "http_method": "POST",
+      "url_path": "/ngprofile/feedback/self",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/FeedBackEndPoints.swift"
+    },
+    {
+      "enum_name": "FeedBackEndPoints",
+      "case_name": "whatmaWebjobfeedback",
+      "http_method": "POST",
+      "url_path": "/spapply/jobapplier/user/webjobfeedback",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/FeedBackEndPoints.swift"
+    },
+    {
+      "enum_name": "InboxEndPoints",
+      "case_name": "inboxListingApi",
+      "http_method": "GET",
+      "url_path": "/ngjobseeker/inbox/mails/v2",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/InboxEndPoints.swift"
+    },
+    {
+      "enum_name": "JobTabsEndPoint",
+      "case_name": "fetchJobDetail",
+      "http_method": "GET",
+      "url_path": "/spapi/jobs/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/JobTabEndPoint.swift"
+    },
+    {
+      "enum_name": "JobTabsEndPoint",
+      "case_name": "fetchSimilarJobs",
+      "http_method": "GET",
+      "url_path": "/spapi/jobs/similar/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/JobTabEndPoint.swift"
+    },
+    {
+      "enum_name": "JobTabsEndPoint",
+      "case_name": "getBrowseJobsInBulk",
+      "http_method": "POST",
+      "url_path": "/spapi/browsejobs/bulk",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/JobTabEndPoint.swift"
+    },
+    {
+      "enum_name": "JobTabsEndPoint",
+      "case_name": "getCategoryJobsForDasBoard",
+      "http_method": "POST",
+      "url_path": "/spapi/browsejobs/bulk",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/JobTabEndPoint.swift"
+    },
+    {
+      "enum_name": "JobTabsEndPoint",
+      "case_name": "getJobsRecommendation",
+      "http_method": "GET",
+      "url_path": "/spapi/jobapi/userjobrecommendations",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/JobTabEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "appPullBlocker",
+      "http_method": "GET",
+      "url_path": "/ngprofile/app/pullback",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "changeEmailApi",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/self/changeEmail",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "changePassword",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/self/changePassword",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "createPassword",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/self/setPassword",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "fetchEmailValidation",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/emailValidation",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "forgetPwdLink",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/self/changePasswordFromLink",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "loginUserToServer",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/login",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "logoutUserToServer",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/logout",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "LoginEndPoint",
+      "case_name": "verifyResetPasswordLink",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/verifyResetPasswordLink",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/LoginEndPoint.swift"
+    },
+    {
+      "enum_name": "NG360EndPoints",
+      "case_name": "getPackagingDetailsForLoggedInUser",
+      "http_method": "",
+      "url_path": "/ng360central/ng360Packaging/self/getDetails",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NG360EndPoints.swift"
+    },
+    {
+      "enum_name": "NG360EndPoints",
+      "case_name": "getPackagingDetailsForLoggedOutUser",
+      "http_method": "",
+      "url_path": "/ng360central/ng360Packaging/getLoggedOutLandingPage",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NG360EndPoints.swift"
+    },
+    {
+      "enum_name": "NGAssessmentEndPoints",
+      "case_name": "getAssessmentListing",
+      "http_method": "GET",
+      "url_path": "/ngassessment/users/self",
+      "file": "NaukriGulf/Classes/Controllers/ProfileTab/NGAssessment /NGAssessmentEndPoints.swift"
+    },
+    {
+      "enum_name": "NGCQPrefillEndPoints",
+      "case_name": "prefill",
+      "http_method": "",
+      "url_path": "/spapply/genai/self/cq/prefill",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NGCQPrefillEndPoints.swift"
+    },
+    {
+      "enum_name": "NGPageConfigEndPoints",
+      "case_name": "getPageConfig",
+      "http_method": "",
+      "url_path": "/spapi/pageConfig/v0",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NGPageConfigEndPoints.swift"
+    },
+    {
+      "enum_name": "NGPushdownEndPoints",
+      "case_name": "getPushdownLayer",
+      "http_method": "GET",
+      "url_path": "/ngprofile/v6/user/self/platform/dashboard/qup",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NGPushdownEndPoints.swift"
+    },
+    {
+      "enum_name": "NGPushdownEndPoints",
+      "case_name": "postPushdownFFLayerActionUpdate",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/platform/\\(platform)/optType/\\(actionType)/ffLayer",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NGPushdownEndPoints.swift"
+    },
+    {
+      "enum_name": "NGSearchWithAIEndPoints",
+      "case_name": "extractNer",
+      "http_method": "",
+      "url_path": "/spapi/jobapi/extractNer",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NGSearchWithAIEndPoints.swift"
+    },
+    {
+      "enum_name": "NGSearchWithAIUsageLimitEndPoints",
+      "case_name": "checkUsageLimit",
+      "http_method": "",
+      "url_path": "/spapi/jobapi/usage-limit/check",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NGSearchWithAIUsageLimitEndPoints.swift"
+    },
+    {
+      "enum_name": "NGSearchWithAIUsageLimitEndPoints",
+      "case_name": "checkUsageLimitSilent",
+      "http_method": "",
+      "url_path": "/spapi/jobapi/usage-limit/check",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/NGSearchWithAIUsageLimitEndPoints.swift"
+    },
+    {
+      "enum_name": "OAuthEndPoints",
+      "case_name": "portLogin",
+      "http_method": "GET",
+      "url_path": "/ni/nilogin/user/AtFromConmnj",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/OAuthEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "deleteEducationType",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/\\(type.cleanString())",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "fetchNewAISummaryToken",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self/generateNewAISummary",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "generateNewAISummaryStream",
+      "http_method": "GET",
+      "url_path": "/gen-ai/processor/template/stream",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "getFullProfileApi",
+      "http_method": "GET",
+      "url_path": "/ngprofile/aggregate/self/fullProfile",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "getParticularSectionDataFromServer",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "getProfileDashBoardAggregator",
+      "http_method": "GET",
+      "url_path": "/ngprofile/aggregate/self/dashboardData",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "getVerificationType",
+      "http_method": "GET",
+      "url_path": "/ngprofile/otp/self/verificationType",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "sendOtpToMobileApi",
+      "http_method": "GET",
+      "url_path": "/ngprofile/otp/self/sendOTP",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "updateMultiPushDownData",
+      "http_method": "POST",
+      "url_path": "/ngprofile/recQup/user/self/submitQupData",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "updateProfileData",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "updatePushdownData",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileEndPoints",
+      "case_name": "verifyOtpApi",
+      "http_method": "POST",
+      "url_path": "/ngprofile/otp/self/verifyOTP",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfilePhotoEndPoints",
+      "case_name": "deleteProfilePhotoFromServer",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/photoAttachment",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfilePhotoEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfilePhotoEndPoints",
+      "case_name": "getProfilePhotoFromServer",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self/photoAttachment/link",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfilePhotoEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfilePhotoEndPoints",
+      "case_name": "uploadProfilePhotoOnServerSide",
+      "http_method": "POST",
+      "url_path": "/file",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfilePhotoEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfilePhotoEndPoints",
+      "case_name": "uploadProfilePhotoWithFileKey",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/photoAttachment",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfilePhotoEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "deleteCVFromServer",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/cvAttachment",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "downloadAttachment",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self\\(params)",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "downloadCVFromServer",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self/cvAttachment",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "getCVMetaDataFromServer",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "uploadAccompToServer",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "uploadAccomplishmetFileToServer",
+      "http_method": "POST",
+      "url_path": "/orchestration/file",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "uploadCVToServer",
+      "http_method": "POST",
+      "url_path": "/ngfilevalidation/file",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "ProfileUploadCVEndPoints",
+      "case_name": "uploadFileFormKeyToServer",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/section/cvAttachment",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ProfileUploadCVEndPoints.swift"
+    },
+    {
+      "enum_name": "PushNotificationTokenEndPoint",
+      "case_name": "deleteApnsTokenForLoggedInUser",
+      "http_method": "",
+      "url_path": "/ngenrollment/v0/logout",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/PushNotificationTokenEndPoint.swift"
+    },
+    {
+      "enum_name": "PushNotificationTokenEndPoint",
+      "case_name": "saveDeviceTokenToServer",
+      "http_method": "",
+      "url_path": "/ngenrollment/v0/registerDevice",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/PushNotificationTokenEndPoint.swift"
+    },
+    {
+      "enum_name": "PushNotificationTokenEndPoint",
+      "case_name": "updateApnsSettingAPI",
+      "http_method": "",
+      "url_path": "/ngenrollment/v0/device/settings",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/PushNotificationTokenEndPoint.swift"
+    },
+    {
+      "enum_name": "PushNotificationTokenEndPoint",
+      "case_name": "updateApnsTokenForLoggedInUser",
+      "http_method": "",
+      "url_path": "/ngenrollment/v0/registerDevice",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/PushNotificationTokenEndPoint.swift"
+    },
+    {
+      "enum_name": "PushNotificationTokenEndPoint",
+      "case_name": "updateDeviceTokenToServer",
+      "http_method": "",
+      "url_path": "/ngenrollment/v0/updateDevice",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/PushNotificationTokenEndPoint.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "checkRegisteredEmail",
+      "http_method": "GET",
+      "url_path": "/resman/user/register/checkEmail",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "cvParser",
+      "http_method": "POST",
+      "url_path": "/ngparser/cvParser",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "getCompWithIndJson",
+      "http_method": "GET",
+      "url_path": "/s/2/200/j/compWithIndAreaSugg.json",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "getDesigWithFAreaJson",
+      "http_method": "GET",
+      "url_path": "/s/2/200/j/desigWithFAreaSugg.json",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "getIdFromServer",
+      "http_method": "GET",
+      "url_path": "/ngresman/user/experiment/\\(experimentType)",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "registerUserToServer",
+      "http_method": "POST",
+      "url_path": "/ngresman/user",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "sendDataToServerWithAuth",
+      "http_method": "POST",
+      "url_path": "/ngresman/user/experiment/\\(experimentType)/page/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "sendDataToUnReg",
+      "http_method": "POST",
+      "url_path": "/ngresman/user/unreg",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "sendEmailVerificationOTP",
+      "http_method": "POST",
+      "url_path": "/ngprofile/email/self/sendEmailVerificationOTP",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "sendUploadCvReminder",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/uploadCvReminder",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "RegistrationApi",
+      "case_name": "verifyEmailOTP",
+      "http_method": "POST",
+      "url_path": "/ngprofile/email/self/verifyEmailOTP",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/RegistrationEndPoints.swift"
+    },
+    {
+      "enum_name": "SearchJobEndPoint",
+      "case_name": "getJobsFromSearchApi",
+      "http_method": "GET",
+      "url_path": "/spapi/jobapi/search",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SearchJobEndPoint.swift"
+    },
+    {
+      "enum_name": "SearchJobEndPoint",
+      "case_name": "getRecentSearchFromApi",
+      "http_method": "GET",
+      "url_path": "/spapi/jobapi/recentsearch",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SearchJobEndPoint.swift"
+    },
+    {
+      "enum_name": "SearchJobEndPoint",
+      "case_name": "getRedirectionCodeApi",
+      "http_method": "GET",
+      "url_path": "/spapi/jobapi/redirectionCode",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SearchJobEndPoint.swift"
+    },
+    {
+      "enum_name": "SearchJobEndPoint",
+      "case_name": "postAndGetRecentSearches",
+      "http_method": "POST",
+      "url_path": "/spapi/jobapi/recentSearchJobCount",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SearchJobEndPoint.swift"
+    },
+    {
+      "enum_name": "SearchJobEndPoint",
+      "case_name": "postRecentSearchDataCount",
+      "http_method": "POST",
+      "url_path": "/spapi/jobapi/recentSearchJobCount",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SearchJobEndPoint.swift"
+    },
+    {
+      "enum_name": "SettingsEndPoint",
+      "case_name": "deactivateUserProfile",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/visibility",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SettingsEndPoint.swift"
+    },
+    {
+      "enum_name": "SettingsEndPoint",
+      "case_name": "deleteProfile",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/deleteProfile",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SettingsEndPoint.swift"
+    },
+    {
+      "enum_name": "SettingsEndPoint",
+      "case_name": "fetchMailerSetting",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self/emailPreference",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SettingsEndPoint.swift"
+    },
+    {
+      "enum_name": "SettingsEndPoint",
+      "case_name": "fetchProfileVisibiltySetting",
+      "http_method": "GET",
+      "url_path": "/ngprofile/user/self/visibility",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SettingsEndPoint.swift"
+    },
+    {
+      "enum_name": "SettingsEndPoint",
+      "case_name": "updateActiveOrPartialActiveProfile",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/visibility",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SettingsEndPoint.swift"
+    },
+    {
+      "enum_name": "SettingsEndPoint",
+      "case_name": "updateMailerSetting",
+      "http_method": "POST",
+      "url_path": "/ngprofile/user/self/emailPreference",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SettingsEndPoint.swift"
+    },
+    {
+      "enum_name": "ShortlistedEndPoint",
+      "case_name": "deleteShortlistJobs",
+      "http_method": "POST",
+      "url_path": "/spapi/jobs/shortlist/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ShortlistedEndPoint.swift"
+    },
+    {
+      "enum_name": "ShortlistedEndPoint",
+      "case_name": "getShortlistJobs",
+      "http_method": "GET",
+      "url_path": "/spapi/jobs/shortlist",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ShortlistedEndPoint.swift"
+    },
+    {
+      "enum_name": "ShortlistedEndPoint",
+      "case_name": "saveBulkShortlistJobs",
+      "http_method": "POST",
+      "url_path": "/spapi/jobs/shortlist",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ShortlistedEndPoint.swift"
+    },
+    {
+      "enum_name": "ShortlistedEndPoint",
+      "case_name": "updateShortlistJobs",
+      "http_method": "POST",
+      "url_path": "/spapi/jobs/shortlist/",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/ShortlistedEndPoint.swift"
+    },
+    {
+      "enum_name": "SocialApiEndPoints",
+      "case_name": "getSocialLoginDetails",
+      "http_method": "GET",
+      "url_path": "/nglogin/user/self/socialLoginDetails",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SocialApiEndPoints.swift"
+    },
+    {
+      "enum_name": "SocialApiEndPoints",
+      "case_name": "postConnectSocial",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/self/socialConnect",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SocialApiEndPoints.swift"
+    },
+    {
+      "enum_name": "SocialApiEndPoints",
+      "case_name": "postDisconnectSocial",
+      "http_method": "POST",
+      "url_path": "/nglogin/user/self/socialDisconnect",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SocialApiEndPoints.swift"
+    },
+    {
+      "enum_name": "SuggestorEndPoint",
+      "case_name": "fetchACSuggestor",
+      "http_method": "GET",
+      "url_path": "/suggest/ngCommonSuggester",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SuggestorEndPoint.swift"
+    },
+    {
+      "enum_name": "SuggestorEndPoint",
+      "case_name": "fetchRCSuggestor",
+      "http_method": "GET",
+      "url_path": "/suggest/ngRelatedConcepts",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SuggestorEndPoint.swift"
+    },
+    {
+      "enum_name": "SuggestorEndPoint",
+      "case_name": "fetchTaxonomySuggestor",
+      "http_method": "GET",
+      "url_path": "/suggest/taxonomyCommonSuggester",
+      "file": "NaukriGulf/Classes/NetworkingSwift/EndPoints/SuggestorEndPoint.swift"
+    },
+    {
+      "enum_name": "WidgetSDKEndPoint",
+      "case_name": "fetchV2WidgetData",
+      "http_method": "",
+      "url_path": "/ims/page/pagename/\\(name.cleanString())",
+      "file": "NaukriGulf/Classes/ThirdParty/WidgteSdk_Phase/API/WidgetSDKEndPoint.swift"
+    },
+    {
+      "enum_name": "WidgetSDKEndPoint",
+      "case_name": "viewAllCompanyBranding",
+      "http_method": "",
+      "url_path": "/imsPage/ad/branding/viewAll",
+      "file": "NaukriGulf/Classes/ThirdParty/WidgteSdk_Phase/API/WidgetSDKEndPoint.swift"
+    }
+  ],
+  "view_controllers": [
+    {
+      "name": "NGEmployerActionController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHTMCV/NGEmployerActionController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGParentActivityTabController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/Activity/NGParentActivityTabController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGSearchApperanceController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHTMCV/NGSearchApperanceController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGWhatHappenCVController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHTMCV/NGWhatHappenCVController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGWhatmaDetailController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHATMA/NGWhatmaDetailController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGWhatmaDetailHelperController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHATMA/NGWhatmaDetailHelperController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGWhatmaEasyApplyListController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHATMA/NGWhatmaEasyApplyListController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGWhatmaExternalApplyListController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHATMA/NGWhatmaExternalApplyListController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGWhatmaListController",
+      "path": "NaukriGulf/Classes/Controllers/ActivityTab/WHATMA/NGWhatmaListController.swift",
+      "feature": "ActivityTab"
+    },
+    {
+      "name": "NGCameraAccessController",
+      "path": "NaukriGulf/Classes/Controllers/CommonCellandView/NGCameraAccessController.swift",
+      "feature": "CommonCellandView"
+    },
+    {
+      "name": "NGForceUpgradeController",
+      "path": "NaukriGulf/Classes/Controllers/CommonControllers/NGForceUpgradeController.swift",
+      "feature": "CommonControllers"
+    },
+    {
+      "name": "NGSpeechAccessController",
+      "path": "NaukriGulf/Classes/Controllers/CommonControllers/VoiceToText/NGSpeechAccessController.swift",
+      "feature": "CommonControllers"
+    },
+    {
+      "name": "NGVoiceToTextViewController",
+      "path": "NaukriGulf/Classes/Controllers/CommonControllers/VoiceToText/NGVoiceToTextViewController.swift",
+      "feature": "CommonControllers"
+    },
+    {
+      "name": "NGWebViewController",
+      "path": "NaukriGulf/Classes/Controllers/CommonControllers/NGWebViewController.swift",
+      "feature": "CommonControllers"
+    },
+    {
+      "name": "NGExploreTabViewController",
+      "path": "NaukriGulf/Classes/Controllers/ExploreTab/NGExploreTabViewController.swift",
+      "feature": "ExploreTab"
+    },
+    {
+      "name": "NG360DiscoveryLoggedInVC",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/NG360DiscoveryLoggedInVC.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGApplyConfirmationController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/Acp/NGApplyConfirmationController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGBrowseJobsDetailController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/JobsCategory/NGBrowseJobsDetailController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGCommonExternalFiltersController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/SrpAndRecentSearch/ExternalFilters/NGCommonExternalFiltersController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGCustomQuestionController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/CustomQuestion/NGCustomQuestionController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGInboxDetailController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/Inbox/NGInboxDetailController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGInboxListingController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/Inbox/NGInboxListingController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGInboxReplyController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/Inbox/NGInboxReplyController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGJDFeedBackController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/JobDetail/NGJDFeedBackController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGJDPhotoGalleryViewController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/JobDetail/NGJDPhotoGalleryViewController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGJobDetailController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/JobDetail/NGJobDetailController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGJobsTypeController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/RecoAndSmjlt/NGJobsTypeController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGNewCQDropdownSheetController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/CustomQuestion/NewCQ/NGNewCQDropdownSheetController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGNewCQSheetController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/CustomQuestion/NewCQ/NGNewCQSheetController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGParentJobsTabController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/NGParentJobsTabController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGParentJobsTabController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/DashBoard/NGParentJobsTabController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSearchFormController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/NGSearchFormController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSearchFormController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/SrpAndRecentSearch/NGSearchFormController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSearchFormControllerWithOutAI",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/SrpAndRecentSearch/NGSearchFormControllerWithOutAI.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSearchTabsController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/SrpAndRecentSearch/NGSearchTabsController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSearchWithAIController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/SrpAndRecentSearch/NGSearchWithAIController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGShortListedJobController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/Shortlisted/NGShortListedJobController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSrpExternalFiltersController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/SrpAndRecentSearch/ExternalFilters/NGSrpExternalFiltersController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSrpExternalFiltersController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/ExternalFilters/NGSrpExternalFiltersController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSrpViewController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/NGSrpViewController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGSrpViewController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/SrpAndRecentSearch/NGSrpViewController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGTopEmployerDetailController",
+      "path": "NaukriGulf/Classes/Controllers/JobsTab/JobsCategory/NGTopEmployerDetailController.swift",
+      "feature": "JobsTab"
+    },
+    {
+      "name": "NGEmailPopUpController",
+      "path": "NaukriGulf/Classes/Controllers/LoginClass/NGForgetPasswordController.swift",
+      "feature": "LoginClass"
+    },
+    {
+      "name": "NGEmailPopUpController",
+      "path": "NaukriGulf/Classes/Controllers/LoginClass/NGEmailPopUpController.swift",
+      "feature": "LoginClass"
+    },
+    {
+      "name": "NGLoginViewController",
+      "path": "NaukriGulf/Classes/Controllers/LoginClass/NGLoginViewController.swift",
+      "feature": "LoginClass"
+    },
+    {
+      "name": "NGSmartApplyLoginSheetVC",
+      "path": "NaukriGulf/Classes/Controllers/LoginClass/NGSmartApplyLoginSheetVC.swift",
+      "feature": "LoginClass"
+    },
+    {
+      "name": "NGSmartLoginRRVC",
+      "path": "NaukriGulf/Classes/Controllers/LoginClass/NGSmartLoginRRVC.swift",
+      "feature": "LoginClass"
+    },
+    {
+      "name": "DocumentPreviewController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/DocumentPreviewController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGAppFeedbackViewController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Cell/FeedbackCells/NGAppFeedbackViewController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGAppRatingViewController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Cell/FeedbackCells/NGAppRatingViewController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGBlockEmployersController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGBlockEmployersController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGCJACreationController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Custom Job Alert/NGCJACreationController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGCJAListingController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Custom Job Alert/NGCJAListingController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGCareerTipsListVC",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Cell/CareerTipsCells/NGCareerTipsListVC.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGChangePasswordController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGChangePasswordController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGCreatePasswordController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGCreatePasswordController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGDeleteProfileController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGDeleteProfileController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGManageAccountController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGManageAccountController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGManageMailerController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGManageMailerController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGParentMoreTabController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/NGParentMoreTabController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGProfileVisibilityController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGProfileVisibilityController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGResetPasswordController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGResetPasswordController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGSettingController",
+      "path": "NaukriGulf/Classes/Controllers/MoreTab/Settings/NGSettingController.swift",
+      "feature": "MoreTab"
+    },
+    {
+      "name": "NGDocumentPreviewViewController",
+      "path": "NaukriGulf/Classes/Controllers/NGDocumentPreviewViewController.swift",
+      "feature": "NGDocumentPreviewViewController.swift"
+    },
+    {
+      "name": "NGEducationResmanViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGEducationResmanScreen.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGExperienceResmanViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGExperienceResmanScreen.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGJboRoleResmanViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGJboRoleResmanScreen.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGPersonalDetailsResmanViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGPersonalDetailsResmanScreen.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGProfileCompletionViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGProfileCompletionViewController.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGProfileHeadlineResmanViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGProfileHeadlineResmanScreen.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGRecentCompanyResmanViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGRecentCompanyResmanScreen.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGResmanBaseViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGResmanBaseViewController.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGResmanCVParserViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGResmanCVParserViewController.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGResmanIntroViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGResmanIntroViewController.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGSkillsResmanViewController",
+      "path": "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGSkillsResmanScreen.swift",
+      "feature": "NewResman"
+    },
+    {
+      "name": "NGAssessmentDetailViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/NGAssessment /NGAssessmentDetail/NGAssessmentDetailViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGAssessmentFeedbackViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/NGAssessment /NGAssessmentFeedbackSheet/NGAssessmentFeedbackView/NGAssessmentFeedbackViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGAssessmentResultViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/NGAssessment /NGAssessmentResult/NGAssessmentResultViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGDeleteAVViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/NGDeleteAVViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGHowItsHelpBottomSheetViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/NGAssessment /HowItsHelpSheet/NGHowItsHelpBottomSheetViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGInfomationBottomSheetViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfilePersonalDetailClasses/NGInfomationBottomSheetViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGOnlineProfileController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileAccomplishmentsClasses/AccomplishmentBottomSheetClasses/NGAccomplishmentOnlineProfile/OnlineProfileBottomSheet/NGOnlineProfileController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGParentProfileTabController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/NGParentProfileTabController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileCertificationController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileAccomplishmentsClasses/AccomplishmentBottomSheetClasses/NGProfileAccomplishmentCertification/certificateBottomSheet/NGProfileCertificationController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditBasicDetailController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileEditBasicDetailClasses/NGProfileEditBasicDetailController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditCvUploadViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileCVUploadClasses/NGProfileEditCvUploadViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditDesiredJobsViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileDesiredJobsClasses/NGProfileEditDesiredJobsViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditEducationViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileEducationClasses/NGProfileEditEducationViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditHeadlineSummaryVC",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileHeadlineSummaryClasses/NGProfileEditHeadlineSummaryVC.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditITSkillsViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileITSkillsClasses/NGProfileEditITSkillsViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditKeySkillsViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileKeyskillClasses/NGProfileEditKeySkillsViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditPersonalDetailViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfilePersonalDetailClasses/NGProfileEditPersonalDetailViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEditProfesDetailViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileEditProfessionalDetailClasses/NGProfileEditProfesDetailViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileEmploymentDetailViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileEmploymentDetail Classes/NGProfileEmploymentDetailViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileInfoSheetSingleBttnViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileEditBasicDetailClasses/NGProfileInfoSheetSingleBttnViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfilePendingActionDetailVC",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfilePendingActionClasses/NGProfilePendingActionDetailVC.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfilePhotoUploadViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfilePhotoUploadClasses/NGProfilePhotoUploadViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGProfileWorkSampleController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileAccomplishmentsClasses/AccomplishmentBottomSheetClasses/NGAccomplishmentWorkSample/WorkSampleBottomSheet/NGProfileWorkSampleController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGSaveCancelConfirmationViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileHeadlineSummaryClasses/NGSaveCancelConfirmationViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGSaveChangesConfirmationController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileEditBasicDetailClasses/NGSaveChangesConfirmationController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGTestCompleteFeedbackViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/NGAssessment /NGAssessmentFeedbackSheet/NGTestCompleteFeedbackViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGUpdateProfesDetailViewController",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Profile/ProfileEditVCs/ProfileEditProfessionalDetailClasses/UpdateProfessionalDetailClasses/NGUpdateProfesDetailViewController.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGVerifyMobileNumberWithOtpVC",
+      "path": "NaukriGulf/Classes/Controllers/ProfileTab/Verify Mobile No/NGVerifyMobileNumberWithOtpVC.swift",
+      "feature": "ProfileTab"
+    },
+    {
+      "name": "NGPushDownViewController",
+      "path": "NaukriGulf/Classes/Controllers/PushdownFlow/PushDownViews/NGPushDownViewController.swift",
+      "feature": "PushdownFlow"
+    },
+    {
+      "name": "NGPushdownDocPreviewViewController",
+      "path": "NaukriGulf/Classes/Controllers/PushdownFlow/PushDownViews/PushdownUploadResumeViews/NGPushdownDocPreviewViewController.swift",
+      "feature": "PushdownFlow"
+    },
+    {
+      "name": "NGCVParserViewController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/NewRegistraionFlow/NGCVParserViewController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "NGEmailVerificationViewController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/ResmanEmailVerification/NGEmailVerificationViewController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "NGResmanFresherExpController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/NewRegistraionFlow/RegisterFresherExp/NGResmanFresherExpController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegisterProfDetailController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/NewRegistraionFlow/RegisterProfDetail/RegisterProfDetailController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegisterSignUpResmanRevampController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/NewRegistraionFlow/RegisterSignUp/RegisterSignUpResmanRevampController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegisterSignUpRevampController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/NewRegistraionFlow/RegisterSignUp/RegisterSignUpRevampController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationCVHeadlineController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationCVHeadlineController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationCVUploadController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationCVUploadController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationDesiredJobController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationDesiredJobController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationEducationController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationEducationController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationExploreOptionController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationExploreOptionController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationFaAndIndController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationFaAndIndController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationFinalPersonalDetailController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationFinalPersonalDetailController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationFresherOrExperienceController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationFresherOrExperienceController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationKeySkillController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationKeySkillController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationPersonalDetailController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationPersonalDetailController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationPhotoUploadController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationPhotoUploadController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationPreviousExpController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationPreviousExpController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationSignUpController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationSignUpController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationVisaLicenseController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationVisaLicenseController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "RegistrationWorkExpController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/OldRegistrationFlow/Controller/RegistrationWorkExpController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "ResmanKeySkillController",
+      "path": "NaukriGulf/Classes/Controllers/RegistrationFlow/NewRegistraionFlow/RegisterProfDetail/KeySkillController/ResmanKeySkillController.swift",
+      "feature": "RegistrationFlow"
+    },
+    {
+      "name": "NGBaseViewController",
+      "path": "NaukriGulf/Classes/Base/NGBaseViewController.swift",
+      "feature": "Shared/Base"
+    },
+    {
+      "name": "NGNavigationBaseController",
+      "path": "NaukriGulf/Classes/Base/NGNavigationBaseController.swift",
+      "feature": "Shared/Base"
+    },
+    {
+      "name": "BaseViewController",
+      "path": "NaukriGulf/Classes/BaseViewController.swift",
+      "feature": "Shared/BaseViewController.swift"
+    },
+    {
+      "name": "NGNotificationPermissionController",
+      "path": "NaukriGulf/Classes/CommonClass/NGNotificationPermissionController.swift",
+      "feature": "Shared/CommonClass"
+    },
+    {
+      "name": "SwiftAlertController",
+      "path": "NaukriGulf/Classes/CommonClass/SwiftAlertController.swift",
+      "feature": "Shared/CommonClass"
+    },
+    {
+      "name": "DropDownCalendarController",
+      "path": "NaukriGulf/Classes/DropDownsUtil/DropDownCalendarController.swift",
+      "feature": "Shared/DropDownsUtil"
+    },
+    {
+      "name": "DropDownNewCalendarController",
+      "path": "NaukriGulf/Classes/DropDownsUtil/DropDownNewCalendarController.swift",
+      "feature": "Shared/DropDownsUtil"
+    },
+    {
+      "name": "NGKeyskillsBottomTagsSheetViewController",
+      "path": "NaukriGulf/Classes/DropDownsUtil/NGKeyskillsBottomTagsSheetViewController.swift",
+      "feature": "Shared/DropDownsUtil"
+    },
+    {
+      "name": "SwiftDropDownController",
+      "path": "NaukriGulf/Classes/DropDownsUtil/SwiftDropDownController.swift",
+      "feature": "Shared/DropDownsUtil"
+    },
+    {
+      "name": "SwiftResmanDropDownController",
+      "path": "NaukriGulf/Classes/DropDownsUtil/SwiftNewDropDownController.swift",
+      "feature": "Shared/DropDownsUtil"
+    },
+    {
+      "name": "SheetViewController",
+      "path": "NaukriGulf/ExternalLib/Swift/FittedSheets/FittedSheetsPod/SheetViewController.swift",
+      "feature": "Shared/ExternalLib"
+    },
+    {
+      "name": "InitialViewController",
+      "path": "NaukriGulf/Classes/InitialViewController.swift",
+      "feature": "Shared/InitialViewController.swift"
+    },
+    {
+      "name": "SplashViewController",
+      "path": "NaukriGulf/Classes/LaunchScreen/SplashViewController.swift",
+      "feature": "Shared/LaunchScreen"
+    },
+    {
+      "name": "BaseActivityTabController",
+      "path": "NaukriGulf/Classes/Tabs/BaseActivityTabController.swift.swift",
+      "feature": "Shared/Tabs"
+    },
+    {
+      "name": "BaseJobsTabController",
+      "path": "NaukriGulf/Classes/Tabs/BaseJobsTabController.swift",
+      "feature": "Shared/Tabs"
+    },
+    {
+      "name": "BaseMoreTabController",
+      "path": "NaukriGulf/Classes/Tabs/BaseMoreTabController.swift.swift",
+      "feature": "Shared/Tabs"
+    },
+    {
+      "name": "BaseProfileTabController",
+      "path": "NaukriGulf/Classes/Tabs/BaseProfileTabController.swift.swift",
+      "feature": "Shared/Tabs"
+    },
+    {
+      "name": "NGCompanyBrandingDetailController",
+      "path": "NaukriGulf/Classes/ThirdParty/WidgteSdk_Phase/WidgetController/NGCompanyBrandingDetailController.swift",
+      "feature": "Shared/ThirdParty"
+    },
+    {
+      "name": "NGTopEmpViewAllController",
+      "path": "NaukriGulf/Classes/ThirdParty/WidgteSdk_Phase/WidgetController/NGTopEmpViewAllController.swift",
+      "feature": "Shared/ThirdParty"
+    },
+    {
+      "name": "NGUnRegCVOptionController",
+      "path": "NaukriGulf/Classes/Controllers/UnRegFlow/NGUnRegCVOptionController.swift",
+      "feature": "UnRegFlow"
+    },
+    {
+      "name": "NGUnregApplyController",
+      "path": "NaukriGulf/Classes/Controllers/UnRegFlow/NGUnregApplyController.swift",
+      "feature": "UnRegFlow"
+    }
+  ],
+  "files_with_accessibility_ids": [
+    "NaukriGulf/Classes/Controllers/NewResman/Experienced/NGSkillsResmanScreen.swift"
+  ]
+}

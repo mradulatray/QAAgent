@@ -1,0 +1,18 @@
+{
+  "app_repo": "/Users/mradul.atray/Desktop/infoedge_Project/naukri_gulf/SwiftRevamp/NaukriGulf",
+  "workspace": "NaukriGulf.xcworkspace",
+  "ui_test_scheme": "NaukriGulfUITests",
+  "ui_test_target_dir": "NaukriGulfUITests",
+  "generated_tests_subdir": "Generated",
+  "simulator_id": "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+  "simulator_name": "iPhone 16",
+  "scan_roots": ["NaukriGulf", "NotificationService"],
+  "ignore_dirs": ["Pods", "DerivedData", "build", "xcuserdata", ".git", "LocalPods"],
+  "ignore_files": ["OAuthEndPoints 2.swift", "OAuthEndPoints 3.swift"],
+  "feature_root": "NaukriGulf/Classes/Controllers",
+  "environment": {
+    "debug_build_hits": "production (www.ngma.mobi)",
+    "allow_network_tests": false,
+    "note": "Network-dependent tests stay NOT_EXECUTED until a staging configuration and test accounts are provided."
+  }
+}

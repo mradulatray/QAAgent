@@ -1,0 +1,26 @@
+[
+  {
+    "attachments" : [
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "6E6A2B17-4D4F-4CF6-B3C0-A83A54041D0F.png",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "login_screen_0_3D53175D-1849-4F61-BE63-6549B481EF07.png",
+        "timestamp" : 1793637559.466
+      },
+      {
+        "configurationName" : "Test Scheme Action",
+        "deviceId" : "8C3B3EC8-EC00-40EA-89F4-7D34BEEE056D",
+        "deviceName" : "iPhone 16",
+        "exportedFileName" : "3D275153-F545-409D-AA78-A2CBB8D3D0EB.txt",
+        "isAssociatedWithFailure" : false,
+        "suggestedHumanReadableName" : "login_tree_0_5C5FD3D2-18FB-4853-BC59-1DFF33297668.txt",
+        "timestamp" : 1793637559.329
+      }
+    ],
+    "testIdentifier" : "LoginExplorationUITests/testExploreLoginScreen()",
+    "testIdentifierURL" : "test://com.apple.xcode/NaukriGulf/NaukriGulfUITests/LoginExplorationUITests/testExploreLoginScreen"
+  }
+]
