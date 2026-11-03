@@ -1,0 +1,1 @@
+' qa.test@example.com ' -> field value 'qa.test@example.com ', validation error shown: true
